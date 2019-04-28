@@ -1,0 +1,736 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lua 调试 · Lua 基础手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="刘仁奎">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../assets/styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lua基本语法.html" />
+    
+    
+    <link rel="prev" href="Lua介绍.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    开篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="Lua介绍.html">
+            
+                <a href="Lua介绍.html">
+            
+                    
+                        <b>1.</b>
+                    
+                    Lua 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Lua安装.html">
+            
+                <a href="Lua安装.html">
+            
+                    
+                        <b>2.</b>
+                    
+                    Lua 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Lua基本语法.html">
+            
+                <a href="Lua基本语法.html">
+            
+                    
+                        <b>3.</b>
+                    
+                    Lua 基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Lua数据类型.html">
+            
+                <a href="Lua数据类型.html">
+            
+                    
+                        <b>4.</b>
+                    
+                    Lua 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Lua变量.html">
+            
+                <a href="Lua变量.html">
+            
+                    
+                        <b>5.</b>
+                    
+                    Lua 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="Lua循环.html">
+            
+                <a href="Lua循环.html">
+            
+                    
+                        <b>6.</b>
+                    
+                    Lua 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="Lua运算符.html">
+            
+                <a href="Lua运算符.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    Lua 运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="Lua流程控制.html">
+            
+                <a href="Lua流程控制.html">
+            
+                    
+                        <b>8.</b>
+                    
+                    Lua 流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="Lua函数.html">
+            
+                <a href="Lua函数.html">
+            
+                    
+                        <b>9.</b>
+                    
+                    Lua 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="Lua字符串.html">
+            
+                <a href="Lua字符串.html">
+            
+                    
+                        <b>10.</b>
+                    
+                    Lua 字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="Lua数组.html">
+            
+                <a href="Lua数组.html">
+            
+                    
+                        <b>11.</b>
+                    
+                    Lua 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="Lua迭代器.html">
+            
+                <a href="Lua迭代器.html">
+            
+                    
+                        <b>12.</b>
+                    
+                    Lua 迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="Lua表table.html">
+            
+                <a href="Lua表table.html">
+            
+                    
+                        <b>13.</b>
+                    
+                    Lua table 表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="Lua模块与包.html">
+            
+                <a href="Lua模块与包.html">
+            
+                    
+                        <b>14.</b>
+                    
+                    Lua 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="Lua元表.html">
+            
+                <a href="Lua元表.html">
+            
+                    
+                        <b>15.</b>
+                    
+                    Lua 元表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="Lua协同程序.html">
+            
+                <a href="Lua协同程序.html">
+            
+                    
+                        <b>16.</b>
+                    
+                    Lua 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="Lua文件操作.html">
+            
+                <a href="Lua文件操作.html">
+            
+                    
+                        <b>17.</b>
+                    
+                    Lua 文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="Lua错误处理.html">
+            
+                <a href="Lua错误处理.html">
+            
+                    
+                        <b>1.</b>
+                    
+                    Lua 错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2" data-path="Lua调试.html">
+            
+                <a href="Lua调试.html">
+            
+                    
+                        <b>2.</b>
+                    
+                    Lua 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Lua垃圾收集.html">
+            
+                <a href="Lua垃圾收集.html">
+            
+                    
+                        <b>3.</b>
+                    
+                    Lua 垃圾收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Lua面向对象编程.html">
+            
+                <a href="Lua面向对象编程.html">
+            
+                    
+                        <b>4.</b>
+                    
+                    Lua 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="LuaMySQL操作.html">
+            
+                <a href="LuaMySQL操作.html">
+            
+                    
+                        <b>5.</b>
+                    
+                    Lua MySQL操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lua 调试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lua-debug-&#x8C03;&#x8BD5;"><a name="lua-debug-&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#lua-debug-&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Lua Debug &#x8C03;&#x8BD5;</h2>
+<p>Lua &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x8C03;&#x8BD5;&#x5E93;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x8C03;&#x8BD5;&#x5668;&#x7684;&#x539F;&#x59CB;&#x51FD;&#x6570;&#x3002; &#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x5185;&#x7F6E;&#x7684; Lua &#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x4E5F;&#x6709;&#x8BB8;&#x591A;&#x7B2C;&#x4E09;&#x65B9; Lua &#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x7531;&#x5404;&#x79CD;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x521B;&#x5EFA;&#xFF0C;&#x5176;&#x4E2D;&#x8BB8;&#x591A;&#x662F;&#x5F00;&#x6E90;&#x7684;&#x3002;</p>
+<h3 id="&#x4E00;&#x3001;debug-&#x51FD;&#x6570;"><a name="&#x4E00;&#x3001;debug-&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;debug-&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;Debug &#x51FD;&#x6570;</h3>
+<h4 id="&#xFF08;1&#xFF09;debug"><a name="&#xFF08;1&#xFF09;debug" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;debug"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;debug()</h4>
+<p>&#x8FDB;&#x5165;&#x7528;&#x4E8E;&#x8C03;&#x8BD5;&#x7684;&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;&#xFF0C;&#x8BE5;&#x6A21;&#x5F0F;&#x4FDD;&#x6301;&#x6D3B;&#x52A8;&#x72B6;&#x6001;&#xFF0C;&#x76F4;&#x5230;&#x7528;&#x6237;&#x53EA;&#x8F93;&#x5165;&#x4E00;&#x884C;&#x4E2D;&#x7684; <code>cont</code> &#x5E76;&#x6309;Enter&#x952E;&#x3002; &#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x529F;&#x80FD;&#x5728;&#x6B64;&#x6A21;&#x5F0F;&#x4E0B;&#x68C0;&#x67E5;&#x53D8;&#x91CF;&#x3002;</p>
+<h4 id="&#xFF08;2&#xFF09;getfenvobject"><a name="&#xFF08;2&#xFF09;getfenvobject" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;getfenvobject"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;getfenv(object)</h4>
+<p>&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<h4 id="&#xFF08;3&#xFF09;gethookoptional-thread"><a name="&#xFF08;3&#xFF09;gethookoptional-thread" class="anchor-navigation-ex-anchor" href="#&#xFF08;3&#xFF09;gethookoptional-thread"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;3&#xFF09;gethook(optional thread)</h4>
+<p>&#x8FD4;&#x56DE;&#x7EBF;&#x7A0B;&#x7684;&#x5F53;&#x524D;&#x6302;&#x94A9;&#x8BBE;&#x7F6E;&#xFF0C;&#x6709;&#x4E09;&#x4E2A;&#x503C;&#xFF1A;&#x5F53;&#x524D;&#x6302;&#x94A9;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x524D;&#x6302;&#x94A9;&#x63A9;&#x7801;&#x548C;&#x5F53;&#x524D;&#x6302;&#x94A9;&#x8BA1;&#x6570;&#x3002;</p>
+<h4 id="&#xFF08;4&#xFF09;getinfooptional-thread-function-or-stack-level-optional-flag"><a name="&#xFF08;4&#xFF09;getinfooptional-thread-function-or-stack-level-optional-flag" class="anchor-navigation-ex-anchor" href="#&#xFF08;4&#xFF09;getinfooptional-thread-function-or-stack-level-optional-flag"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;4&#xFF09;getinfo(optional thread, function or stack level, optional flag)</h4>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x51FD;&#x6570;&#x4FE1;&#x606F;&#x7684;&#x8868;&#x3002;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7ED9;&#x51FA;&#x51FD;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x7ED9;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x7684;&#x503C;&#xFF0C;&#x5728;&#x7ED9;&#x5B9A;&#x7EBF;&#x7A0B;&#x7684;&#x8C03;&#x7528;&#x5806;&#x6808;&#x7684;&#x7EA7;&#x522B;&#x51FD;&#x6570;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;</p>
+<ul>
+<li>&#x7EA7;&#x522B; <code>0</code> &#x4E3A;&#x5F53;&#x524D;&#x51FD;&#x6570;(getinfo&#x672C;&#x8EAB;);</li>
+<li>&#x7EA7;&#x522B; <code>1</code> &#x4E3A;&#x8C03;&#x7528; getinfo &#x7684;&#x51FD;&#x6570;;</li>
+<li>&#x5982;&#x679C; function &#x662F;&#x4E00;&#x4E2A;&#x5927;&#x4E8E;&#x6D3B;&#x52A8;&#x51FD;&#x6570;&#x6570;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x5219; getinfo &#x8FD4;&#x56DE; <code>nil</code>&#x3002;</li>
+</ul>
+<h4 id="&#xFF08;5&#xFF09;debuggetlocalthread-f-local"><a name="&#xFF08;5&#xFF09;debuggetlocalthread-f-local" class="anchor-navigation-ex-anchor" href="#&#xFF08;5&#xFF09;debuggetlocalthread-f-local"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;5&#xFF09;debug.getlocal([thread,] f, local)</h4>
+<p>&#x6B64;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5728;&#x6808;&#x7684; <code>f</code> &#x5C42;&#x5904;&#x51FD;&#x6570;&#x7684;&#x7D22;&#x5F15;&#x4E3A; <code>local</code> &#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF; &#x7684;&#x540D;&#x5B57;&#x548C;&#x503C;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x4EC5;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x4E5F;&#x5305;&#x62EC;&#x5F62;&#x53C2;&#x3001;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#x7B49;&#x3002;</p>
+<h4 id="&#xFF08;6&#xFF09;getmetatablevalue"><a name="&#xFF08;6&#xFF09;getmetatablevalue" class="anchor-navigation-ex-anchor" href="#&#xFF08;6&#xFF09;getmetatablevalue"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;6&#xFF09;getmetatable(value)</h4>
+<p>&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5143;&#x8868;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; <code>nil</code>&#x3002;</p>
+<h4 id="&#xFF08;7&#xFF09;getregistry"><a name="&#xFF08;7&#xFF09;getregistry" class="anchor-navigation-ex-anchor" href="#&#xFF08;7&#xFF09;getregistry"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;7&#xFF09;getregistry()</h4>
+<p>&#x8FD4;&#x56DE;&#x6CE8;&#x518C;&#x8868;&#x8868;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9884;&#x5B9A;&#x4E49;&#x51FA;&#x6765;&#x7684;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x4EFB;&#x4F55; C &#x4EE3;&#x7801;&#x60F3;&#x4FDD;&#x5B58;&#x7684; Lua &#x503C;&#x3002;</p>
+<h4 id="&#xFF08;8&#xFF09;getupvaluefunction-upvalue-index"><a name="&#xFF08;8&#xFF09;getupvaluefunction-upvalue-index" class="anchor-navigation-ex-anchor" href="#&#xFF08;8&#xFF09;getupvaluefunction-upvalue-index"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;8&#xFF09;getupvalue(function, upvalue index)</h4>
+<p>&#x6B64;&#x51FD;&#x6570;&#x8FD4;&#x56DE; <code>upvalue</code> &#x7684;&#x540D;&#x79F0;&#x548C;&#x503C;&#xFF0C;&#x7D22;&#x5F15;&#x4E3A;&#x51FD;&#x6570; <code>func</code>&#x3002;&#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7D22;&#x5F15;&#x6CA1;&#x6709; <code>upvalue</code>&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x8FD4;&#x56DE; <code>nil</code>&#x3002;</p>
+<h4 id="&#xFF08;9&#xFF09;setupvaluef-up-value"><a name="&#xFF08;9&#xFF09;setupvaluef-up-value" class="anchor-navigation-ex-anchor" href="#&#xFF08;9&#xFF09;setupvaluef-up-value"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;9&#xFF09;setupvalue(f, up, value)</h4>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06; <code>value</code> &#x8BBE;&#x4E3A;&#x51FD;&#x6570; <code>f</code> &#x7684;&#x7B2C; <code>up</code> &#x4E2A;&#x4E0A;&#x503C;&#x3002; &#x5982;&#x679C;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x90A3;&#x4E2A;&#x4E0A;&#x503C;&#xFF0C;&#x8FD4;&#x56DE; <code>nil</code> &#x5426;&#x5219;&#xFF0C;&#x8FD4;&#x56DE;&#x8BE5;&#x4E0A;&#x503C;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<h4 id="&#xFF08;9&#xFF09;setfenvfunction-or-thread-or-userdata-environment-table"><a name="&#xFF08;9&#xFF09;setfenvfunction-or-thread-or-userdata-environment-table" class="anchor-navigation-ex-anchor" href="#&#xFF08;9&#xFF09;setfenvfunction-or-thread-or-userdata-environment-table"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;9&#xFF09;setfenv(function or thread or userdata, environment table)</h4>
+<p>&#x5C06;&#x7ED9;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;&#x73AF;&#x5883;&#x8BBE;&#x7F6E;&#x4E3A;&#x7ED9;&#x5B9A;&#x8868;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x3002;</p>
+<h4 id="&#xFF08;10&#xFF09;sethookoptional-thread-hook-function-hook-mask-string-with-c-andor-r-andor-l-optional-instruction-count"><a name="&#xFF08;10&#xFF09;sethookoptional-thread-hook-function-hook-mask-string-with-c-andor-r-andor-l-optional-instruction-count" class="anchor-navigation-ex-anchor" href="#&#xFF08;10&#xFF09;sethookoptional-thread-hook-function-hook-mask-string-with-c-andor-r-andor-l-optional-instruction-count"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;10&#xFF09;sethook(optional thread, hook function, hook mask string with &quot;c&quot; and/or &quot;r&quot; and/or &quot;l&quot;, optional instruction count)</h4>
+<p>&#x5C06;&#x7ED9;&#x5B9A;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;&#x94A9;&#x5B50;&#x3002;&#x5B57;&#x7B26;&#x4E32; <code>mask</code> &#x4EE5;&#x53CA;&#x6570;&#x5B57; <code>count</code> &#x51B3;&#x5B9A;&#x4E86;&#x94A9;&#x5B50;&#x5C06;&#x5728;&#x4F55;&#x65F6;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x63A9;&#x7801;&#x662F;&#x7531;&#x4E0B;&#x5217;&#x5B57;&#x7B26;&#x7EC4;&#x5408;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x6709;&#x5176;&#x542B;&#x4E49;&#xFF1A;</p>
+<ul>
+<li><code>&apos;c&apos;</code>&#xFF1A;&#x6BCF;&#x5F53; Lua &#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x94A9;&#x5B50;&#xFF1B;</li>
+<li><code>&apos;r&apos;</code>&#xFF1A;&#x6BCF;&#x5F53; Lua &#x4ECE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5185;&#x8FD4;&#x56DE;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x94A9;&#x5B50;&#xFF1B;</li>
+<li><code>&apos;l&apos;</code>&#xFF1A;&#x6BCF;&#x5F53; Lua &#x8FDB;&#x5165;&#x65B0;&#x7684;&#x4E00;&#x884C;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x94A9;&#x5B50;&#x3002;</li>
+</ul>
+<h4 id="&#xFF08;11&#xFF09;ssetlocaloptional-thread-stack-level-local-index-value"><a name="&#xFF08;11&#xFF09;ssetlocaloptional-thread-stack-level-local-index-value" class="anchor-navigation-ex-anchor" href="#&#xFF08;11&#xFF09;ssetlocaloptional-thread-stack-level-local-index-value"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;11&#xFF09;ssetlocal(optional thread, stack level, local index, value)</h4>
+<p>&#x5C06; <code>value</code> &#x8D4B;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x7B2C; <code>level</code> &#x7EA7;&#x522B;&#x51FD;&#x6570;&#x7684;&#x7B2C; <code>local</code> &#x4E2A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x90A3;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE; <code>nil</code> &#x3002; &#x5982;&#x679C; <code>level</code> &#x8D8A;&#x754C;&#xFF0C;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<h4 id="setmetatablevalue-table"><a name="setmetatablevalue-table" class="anchor-navigation-ex-anchor" href="#setmetatablevalue-table"><i class="fa fa-link" aria-hidden="true"></i></a>setmetatable(value, table)</h4>
+<p>&#x5C06; <code>value</code> &#x7684;&#x5143;&#x8868;&#x8BBE;&#x4E3A; <code>table</code> &#xFF08;&#x53EF;&#x4EE5;&#x662F; <code>nil</code>&#xFF09;&#x3002; &#x8FD4;&#x56DE; <code>value</code>&#x3002;</p>
+<h4 id="tracebacksthread-message--level"><a name="tracebacksthread-message--level" class="anchor-navigation-ex-anchor" href="#tracebacksthread-message--level"><i class="fa fa-link" aria-hidden="true"></i></a>tracebacks([thread,] [message [, level]])</h4>
+<p>&#x5982;&#x679C; <code>message</code> &#x6709;&#xFF0C;&#x4E14;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6216; <code>nil</code>&#xFF0C;&#x51FD;&#x6570;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x5904;&#x7406;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; <code>message</code>&#x3002;&#x5426;&#x5219;&#xFF0C;&#x8FD4;&#x56DE;&#x8C03;&#x7528;&#x6808;&#x7684;&#x6808;&#x56DE;&#x6EAF;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x9009;&#x9879; <code>message</code> &#x88AB;&#x6DFB;&#x52A0;&#x5728;&#x6808;&#x56DE;&#x6EAF;&#x4FE1;&#x606F;&#x7684;&#x5F00;&#x5934;&#x3002;&#x6570;&#x5B57;&#x53EF;&#x9009;&#x9879; <code>level</code> &#x6307;&#x660E;&#x4ECE;&#x6808;&#x7684;&#x54EA;&#x4E00;&#x5C42;&#x5F00;&#x59CB;&#x56DE;&#x6EAF; &#xFF08;&#x9ED8;&#x8BA4;&#x4E3A; 1&#xFF0C;&#x5373;&#x8C03;&#x7528; <code>traceback</code> &#x7684;&#x90A3;&#x91CC;&#xFF09;&#x3002;</p>
+<h3 id="&#x4E8C;&#x3001;&#x793A;&#x4F8B;"><a name="&#x4E8C;&#x3001;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x793A;&#x4F8B;</h3>
+<pre class="language-"><code class="lang-lua"><span class="token keyword">function</span> <span class="token function">myfunction</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>debug<span class="token punctuation">.</span><span class="token function">traceback</span><span class="token punctuation">(</span><span class="token string">&quot;Stack trace&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>debug<span class="token punctuation">.</span><span class="token function">getinfo</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Stack trace end&quot;</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token number">10</span>
+<span class="token keyword">end</span>
+
+<span class="token function">myfunction</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>debug<span class="token punctuation">.</span><span class="token function">getinfo</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code class="lang-lua">&#x279C;  code<span class="token operator">-</span>test lua test<span class="token punctuation">.</span>lua
+Stack trace
+stack traceback<span class="token punctuation">:</span>
+    test<span class="token punctuation">.</span>lua<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">:</span> <span class="token keyword">in</span> <span class="token keyword">function</span> <span class="token string">&apos;myfunction&apos;</span>
+    test<span class="token punctuation">.</span>lua<span class="token punctuation">:</span><span class="token number">7</span><span class="token punctuation">:</span> <span class="token keyword">in</span> main chunk
+    <span class="token punctuation">[</span>C<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token keyword">in</span> ?
+table<span class="token punctuation">:</span> <span class="token number">0x7ff4cc500580</span>
+Stack trace <span class="token keyword">end</span>
+table<span class="token punctuation">:</span> <span class="token number">0x7ff4cc407130</span>
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x8C03;&#x8BD5;&#x5E93;&#x4E2D;&#x63D0;&#x4F9B;&#x7684; <code>debug.trace</code> &#x51FD;&#x6570;&#x6253;&#x5370;&#x5806;&#x6808;&#x8DDF;&#x8E2A;&#x3002;<code>debug.getinfo</code> &#x83B7;&#x53D6;&#x51FD;&#x6570;&#x7684;&#x5F53;&#x524D;&#x8868;&#x3002;</p>
+<h3 id="&#x4E09;&#x3001;&#x793A;&#x4F8B;"><a name="&#x4E09;&#x3001;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x793A;&#x4F8B;</h3>
+<p>&#x8C03;&#x8BD5;&#x793A;&#x4F8B;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7ECF;&#x5E38;&#x4E3A;&#x4E86;&#x77E5;&#x9053;&#x51FD;&#x6570;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x4EE5;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;&#x3002; &#x4E3A;&#x6B64;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>getupvalue</code> &#x548C;&#x4F7F;&#x7528; <code>setupvalue</code> &#x5E76;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E9B;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre class="language-"><code class="lang-lua"><span class="token keyword">function</span> <span class="token function">newCounter</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token keyword">local</span> n <span class="token operator">=</span> <span class="token number">0</span>
+   <span class="token keyword">local</span> k <span class="token operator">=</span> <span class="token number">0</span>
+
+   <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+      k <span class="token operator">=</span> n
+      n <span class="token operator">=</span> n <span class="token operator">+</span> <span class="token number">1</span>
+      <span class="token keyword">return</span> n
+   <span class="token keyword">end</span>
+
+<span class="token keyword">end</span>
+
+counter <span class="token operator">=</span> <span class="token function">newCounter</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">counter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>        <span class="token comment">--&gt; 1</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">counter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>        <span class="token comment">--&gt; 2</span>
+
+<span class="token keyword">local</span> i <span class="token operator">=</span> <span class="token number">1</span>
+
+<span class="token keyword">repeat</span>
+   name<span class="token punctuation">,</span> val <span class="token operator">=</span> debug<span class="token punctuation">.</span><span class="token function">getupvalue</span><span class="token punctuation">(</span>counter<span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+
+   <span class="token keyword">if</span> name <span class="token keyword">then</span>
+      <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;index&quot;</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> name<span class="token punctuation">,</span> <span class="token string">&quot;=&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span>
+
+      <span class="token keyword">if</span><span class="token punctuation">(</span>name <span class="token operator">==</span> <span class="token string">&quot;n&quot;</span><span class="token punctuation">)</span> <span class="token keyword">then</span>
+         debug<span class="token punctuation">.</span><span class="token function">setupvalue</span><span class="token punctuation">(</span>counter<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+      <span class="token keyword">end</span>
+
+      i <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span>
+   <span class="token keyword">end</span>
+<span class="token keyword">until</span> <span class="token keyword">not</span> name
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">counter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code>1
+2
+index    1    k    =    1
+index    2    n    =    2
+11
+</code></pre><p>&#x5728;&#x6B64;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x8BA1;&#x6570;&#x5668;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x65F6;&#x90FD;&#x4F1A;&#x66F4;&#x65B0;&#x4E00;&#x6B21;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>getupvalue</code> &#x51FD;&#x6570;&#x67E5;&#x770B;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;&#x7136;&#x540E;&#x5C06;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;&#x4E3A;&#x65B0;&#x503C;&#x3002;&#x8FD9;&#x91CC;&#xFF0C;&#x5728;&#x8C03;&#x7528; <code>set</code> &#x64CD;&#x4F5C;&#x4E4B;&#x524D; <code>n</code> &#x4E3A; <code>2</code>&#x3002;&#x4F7F;&#x7528; <code>setupvalue</code> &#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x66F4;&#x65B0;&#x4E3A; <code>10</code>&#x3002;&#x73B0;&#x5728;&#x5F53;&#x8C03;&#x7528;&#x8BA1;&#x6570;&#x5668;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x8FD4;&#x56DE; <code>11</code> &#x800C;&#x4E0D;&#x662F; <code>3</code>&#x3002;</p>
+<h3 id="&#x56DB;&#x3001;&#x8C03;&#x8BD5;&#x7C7B;&#x578B;"><a name="&#x56DB;&#x3001;&#x8C03;&#x8BD5;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x8C03;&#x8BD5;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;&#x8C03;&#x8BD5;&#x7C7B;&#x578B;</h3>
+<ul>
+<li>&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;</li>
+<li>&#x56FE;&#x5F62;&#x754C;&#x9762;&#x8C03;&#x8BD5;</li>
+</ul>
+<h4 id="&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;"><a name="&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;</h4>
+<p>&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;&#x662F;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x548C;&#x6253;&#x5370;&#x8BED;&#x53E5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;&#x7684;&#x8C03;&#x8BD5;&#x7C7B;&#x578B;&#x3002;</p>
+<p>Lua &#x6709;&#x8BB8;&#x591A;&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x3002;</p>
+<ul>
+<li><code>RemDebug</code>&#xFF1A;&#x5B83;&#x662F; Lua 5.0 &#x548C; Lua 5.1 &#x7684;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x5668;&#x3002;&#x5B83;&#x5141;&#x8BB8;&#x8FDC;&#x7A0B;&#x63A7;&#x5236;&#x53E6;&#x4E00;&#x4E2A;Lua&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x8BBE;&#x7F6E;&#x65AD;&#x70B9;&#x5E76;&#x68C0;&#x67E5;&#x7A0B;&#x5E8F;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;&#x5B83;&#x8FD8;&#x53EF;&#x4EE5;&#x8C03;&#x8BD5; CGILua &#x811A;&#x672C;&#x3002;</li>
+<li><code>clidebugger</code>&#xFF1A;&#x5B83;&#x662F; Lua 5.1 &#x7684;&#x7B80;&#x5355;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x7528;&#x7EAF;Lua&#x7F16;&#x5199;&#x3002;&#x9664;&#x4E86;&#x6807;&#x51C6;&#x7684; Lua 5.1 &#x5E93;&#x4E4B;&#x5916;&#xFF0C;&#x5B83;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x4E1C;&#x897F;&#x3002;&#x5B83;&#x7684;&#x7075;&#x611F;&#x6765;&#x81EA; RemDebug&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x8FDC;&#x7A0B;&#x5DE5;&#x5177;&#x3002;</li>
+<li><code>ctrace</code>&#xFF1A;&#x7528;&#x4E8E;&#x8DDF;&#x8E2A;Lua API&#x8C03;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x3002;</li>
+<li><code>xdbLua</code>&#xFF1A;&#x7528;&#x4E8E;Windows&#x5E73;&#x53F0;&#x7684;&#x7B80;&#x5355;Lua&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x8BD5;&#x7A0B;&#x5E8F;&#x3002;</li>
+<li><code>LuaInterface Debugger</code>&#xFF1A;&#x5B83;&#x662F; LuaInterface &#x7684;&#x8C03;&#x8BD5;&#x5668;&#x6269;&#x5C55;&#x3002;&#x5B83;&#x5C06;&#x5185;&#x7F6E;&#x7684;Lua&#x8C03;&#x8BD5;&#x63A5;&#x53E3;&#x63D0;&#x5347;&#x5230;&#x66F4;&#x9AD8;&#x7684;&#x7EA7;&#x522B;&#x3002;&#x4E0E;&#x8C03;&#x8BD5;&#x5668;&#x7684;&#x4EA4;&#x4E92;&#x7531;&#x4E8B;&#x4EF6;&#x548C;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x5B8C;&#x6210;&#x3002;</li>
+<li><code>Rldb</code>&#xFF1A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x901A;&#x8FC7;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x8FDC;&#x7A0B;Lua&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x53EF;&#x5728; Windows &#x548C; Linux &#x4E0A;&#x4F7F;&#x7528;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x4E3A;&#x60A8;&#x63D0;&#x4F9B;&#x6BD4;&#x73B0;&#x6709;&#x529F;&#x80FD;&#x66F4;&#x591A;&#x7684;&#x529F;&#x80FD;&#x3002;</li>
+<li><code>ModDebug</code>&#xFF1A;&#x8FD9;&#x5141;&#x8BB8;&#x8FDC;&#x7A0B;&#x63A7;&#x5236;&#x53E6;&#x4E00;&#x4E2A;Lua&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x8BBE;&#x7F6E;&#x65AD;&#x70B9;&#xFF0C;&#x5E76;&#x68C0;&#x67E5;&#x7A0B;&#x5E8F;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;</li>
+</ul>
+<h4 id="&#x56FE;&#x5F62;&#x8C03;&#x8BD5;"><a name="&#x56FE;&#x5F62;&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x5F62;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x5F62;&#x8C03;&#x8BD5;</h4>
+<p>&#x5728;IDE&#x4E0B;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x56FE;&#x5F62;&#x8C03;&#x8BD5;&#xFF0C;&#x5728;IDE&#x4E2D;&#x53EF;&#x4E3A;&#x5404;&#x79CD;&#x72B6;&#x6001;&#xFF08;&#x5982;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x5806;&#x6808;&#x8DDF;&#x8E2A;&#x548C;&#x5176;&#x4ED6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF09;&#x8FDB;&#x884C;&#x53EF;&#x89C6;&#x5316;&#x8C03;&#x8BD5;&#x3002;&#x501F;&#x52A9;&#x65AD;&#x70B9;&#xFF0C;&#x6B65;&#x5165;&#xFF0C;&#x6B65;&#x8FDB;&#x548C;IDE&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x6309;&#x94AE;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x53EF;&#x89C6;&#x5316;&#x8868;&#x793A;&#x548C;&#x9010;&#x6B65;&#x63A7;&#x5236;&#x6267;&#x884C;&#x3002;</p>
+<p>Lua&#x6709;&#x8BB8;&#x591A;&#x56FE;&#x5F62;&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x3002;</p>
+<ul>
+<li><code>SciTE</code>&#xFF1A;Lua &#x7684;&#x9ED8;&#x8BA4; Windows IDE &#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x4E2A;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x5982;&#x65AD;&#x70B9;&#xFF0C;&#x6B65;&#x9AA4;&#xFF0C;&#x6B65;&#x5165;&#xFF0C;&#x6B65;&#x8FDB;&#xFF0C;&#x76D1;&#x89C6;&#x53D8;&#x91CF;&#x7B49;&#x3002;</li>
+<li><code>Decoda</code>&#xFF1A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x652F;&#x6301;&#x7684;&#x56FE;&#x5F62;&#x8C03;&#x8BD5;&#x5668;&#x3002;</li>
+<li><code>ZeroBrane Studio</code>&#xFF1A;Lua IDE &#x96C6;&#x6210;&#x4E86;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x5668;&#xFF0C;&#x5806;&#x6808;&#x89C6;&#x56FE;&#xFF0C;&#x76D1;&#x89C6;&#x89C6;&#x56FE;&#xFF0C;&#x8FDC;&#x7A0B;&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x9759;&#x6001;&#x5206;&#x6790;&#x5668;&#x7B49;&#x3002;&#x9002;&#x7528;&#x4E8E; LuaJIT&#xFF0C;Love2d&#xFF0C;Moai &#x548C;&#x5176;&#x4ED6;Lua&#x5F15;&#x64CE;; Windows&#xFF0C;OSX&#x548C;Linux&#x3002;</li>
+<li><code>akdebugger</code>&#xFF1A;&#x8FD9;&#x662F;Eclipse&#x8C03;&#x8BD5;&#x5668;&#x548C;&#x7F16;&#x8F91;&#x5668;&#x7684;Lua&#x63D2;&#x4EF6;&#x3002;</li>
+<li><code>luaedit</code>&#xFF1A;&#x8FD9;&#x5305;&#x62EC;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#xFF0C;&#x672C;&#x5730;&#x8C03;&#x8BD5;&#xFF0C;&#x8BED;&#x6CD5;&#x7A81;&#x51FA;&#x663E;&#x793A;&#xFF0C;&#x5B8C;&#x6210;&#x5EFA;&#x8BAE;&#x5217;&#x8868;&#xFF0C;&#x53C2;&#x6570;&#x547D;&#x9898;&#x5F15;&#x64CE;&#xFF0C;&#x9AD8;&#x7EA7;&#x65AD;&#x70B9;&#x7BA1;&#x7406;&#xFF08;&#x5305;&#x62EC;&#x65AD;&#x70B9;&#x548C;&#x547D;&#x4E2D;&#x8BA1;&#x6570;&#x7684;&#x6761;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF09;&#xFF0C;&#x529F;&#x80FD;&#x5217;&#x8868;&#xFF0C;&#x5168;&#x5C40;&#x548C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5217;&#x8868;&#xFF0C;&#x76D1;&#x89C6;&#xFF0C;&#x9762;&#x5411;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x7684;&#x7BA1;&#x7406;&#x3002;</li>
+</ul>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-04-22 17:17:09
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lua介绍.html" class="navigation navigation-prev " aria-label="Previous page: Lua 介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Lua基本语法.html" class="navigation navigation-next " aria-label="Next page: Lua 基本语法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lua 调试","level":"2","depth":0,"next":{"title":"Lua 基本语法","level":"3","depth":0,"path":"base/Lua基本语法.md","ref":"base/Lua基本语法.md","articles":[]},"previous":{"title":"Lua 介绍","level":"1","depth":0,"path":"base/Lua介绍.md","ref":"base/Lua介绍.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-livereload","search-pro","splitter","prism","highlight","theme-comscore","anchor-navigation-ex-toc","expandable-chapters-small","tbfed-pagefooter","image-captions","livereload"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"splitter":{},"search-pro":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"刘仁奎","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"Lua 基础手册","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"Lua 基础手册"},"file":{"path":"base/Lua调试.md","mtime":"2019-04-22T09:17:09.371Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-28T03:10:02.386Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

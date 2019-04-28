@@ -1,0 +1,782 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lua 运算符 · Lua 基础手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="刘仁奎">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../assets/styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lua流程控制.html" />
+    
+    
+    <link rel="prev" href="Lua循环.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    开篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="Lua介绍.html">
+            
+                <a href="Lua介绍.html">
+            
+                    
+                        <b>1.</b>
+                    
+                    Lua 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Lua安装.html">
+            
+                <a href="Lua安装.html">
+            
+                    
+                        <b>2.</b>
+                    
+                    Lua 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Lua基本语法.html">
+            
+                <a href="Lua基本语法.html">
+            
+                    
+                        <b>3.</b>
+                    
+                    Lua 基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Lua数据类型.html">
+            
+                <a href="Lua数据类型.html">
+            
+                    
+                        <b>4.</b>
+                    
+                    Lua 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Lua变量.html">
+            
+                <a href="Lua变量.html">
+            
+                    
+                        <b>5.</b>
+                    
+                    Lua 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="Lua循环.html">
+            
+                <a href="Lua循环.html">
+            
+                    
+                        <b>6.</b>
+                    
+                    Lua 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7" data-path="Lua运算符.html">
+            
+                <a href="Lua运算符.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    Lua 运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="Lua流程控制.html">
+            
+                <a href="Lua流程控制.html">
+            
+                    
+                        <b>8.</b>
+                    
+                    Lua 流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="Lua函数.html">
+            
+                <a href="Lua函数.html">
+            
+                    
+                        <b>9.</b>
+                    
+                    Lua 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="Lua字符串.html">
+            
+                <a href="Lua字符串.html">
+            
+                    
+                        <b>10.</b>
+                    
+                    Lua 字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="Lua数组.html">
+            
+                <a href="Lua数组.html">
+            
+                    
+                        <b>11.</b>
+                    
+                    Lua 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="Lua迭代器.html">
+            
+                <a href="Lua迭代器.html">
+            
+                    
+                        <b>12.</b>
+                    
+                    Lua 迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="Lua表table.html">
+            
+                <a href="Lua表table.html">
+            
+                    
+                        <b>13.</b>
+                    
+                    Lua table 表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="Lua模块与包.html">
+            
+                <a href="Lua模块与包.html">
+            
+                    
+                        <b>14.</b>
+                    
+                    Lua 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="Lua元表.html">
+            
+                <a href="Lua元表.html">
+            
+                    
+                        <b>15.</b>
+                    
+                    Lua 元表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="Lua协同程序.html">
+            
+                <a href="Lua协同程序.html">
+            
+                    
+                        <b>16.</b>
+                    
+                    Lua 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="Lua文件操作.html">
+            
+                <a href="Lua文件操作.html">
+            
+                    
+                        <b>17.</b>
+                    
+                    Lua 文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="Lua错误处理.html">
+            
+                <a href="Lua错误处理.html">
+            
+                    
+                        <b>1.</b>
+                    
+                    Lua 错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Lua调试.html">
+            
+                <a href="Lua调试.html">
+            
+                    
+                        <b>2.</b>
+                    
+                    Lua 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Lua垃圾收集.html">
+            
+                <a href="Lua垃圾收集.html">
+            
+                    
+                        <b>3.</b>
+                    
+                    Lua 垃圾收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Lua面向对象编程.html">
+            
+                <a href="Lua面向对象编程.html">
+            
+                    
+                        <b>4.</b>
+                    
+                    Lua 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="LuaMySQL操作.html">
+            
+                <a href="LuaMySQL操作.html">
+            
+                    
+                        <b>5.</b>
+                    
+                    Lua MySQL操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lua 运算符</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lua-&#x8FD0;&#x7B97;&#x7B26;"><a name="lua-&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#lua-&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>Lua &#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x544A;&#x8BC9;&#x89E3;&#x91CA;&#x5668;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x6570;&#x5B66;&#x6216;&#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x7684;&#x7B26;&#x53F7;&#x3002; Lua&#x8BED;&#x8A00;&#x5185;&#x7F6E;&#x8FD0;&#x7B97;&#x7B26;&#x4E30;&#x5BCC;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4EE5;&#x4E0B;&#x7C7B;&#x578B;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x3002;</p>
+<ul>
+<li>&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;</li>
+<li>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;</li>
+<li>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</li>
+<li>&#x5176;&#x5B83;&#x8FD0;&#x7B97;&#x7B26;</li>
+</ul>
+<h3 id="&#x4E00;&#x3001;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x4E00;&#x3001;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4E0B;&#x8868;&#x5217;&#x51FA;&#x4E86; Lua &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8BBE;&#x5B9A; A &#x7684;&#x503C;&#x4E3A;10&#xFF0C;B &#x7684;&#x503C;&#x4E3A; 20&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x64CD;&#x4F5C;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x5B9E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>&#x52A0;&#x6CD5;</td>
+<td><code>A + B = 30</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>&#x51CF;&#x6CD5;</td>
+<td><code>A - B = -10</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>&#x4E58;&#x6CD5;</td>
+<td><code>A * B = 200</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>&#x9664;&#x6CD5;</td>
+<td><code>B / A = 2</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>&#x53D6;&#x4F59;</td>
+<td><code>B % A = 0</code></td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>&#x4E58;&#x5E42;</td>
+<td><code>A^2 = 100</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>&#x8D1F;&#x53F7;</td>
+<td><code>-A = -10</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x4E8C;&#x3001;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x4E8C;&#x3001;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4E0B;&#x8868;&#x5217;&#x51FA;&#x4E86; Lua &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8BBE;&#x5B9A; A &#x7684;&#x503C;&#x4E3A;10&#xFF0C;B &#x7684;&#x503C;&#x4E3A; 20&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x64CD;&#x4F5C;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x5B9E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>&#x7B49;&#x4E8E;&#xFF0C;&#x68C0;&#x6D4B;&#x4E24;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x76F8;&#x7B49;&#x8FD4;&#x56DE; true&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; false</td>
+<td>(A == B) &#x4E3A; false&#x3002;</td>
+</tr>
+<tr>
+<td><code>~=</code></td>
+<td>&#x4E0D;&#x7B49;&#x4E8E;&#xFF0C;&#x68C0;&#x6D4B;&#x4E24;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x76F8;&#x7B49;&#x8FD4;&#x56DE; false&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; true</td>
+<td>(A ~= B) &#x4E3A; true&#x3002;</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>&#x5927;&#x4E8E;&#xFF0C;&#x5982;&#x679C;&#x5DE6;&#x8FB9;&#x7684;&#x503C;&#x5927;&#x4E8E;&#x53F3;&#x8FB9;&#x7684;&#x503C;&#xFF0C;&#x8FD4;&#x56DE; true&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; false</td>
+<td>(A &gt; B) &#x4E3A; false&#x3002;</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>&#x5C0F;&#x4E8E;&#xFF0C;&#x5982;&#x679C;&#x5DE6;&#x8FB9;&#x7684;&#x503C;&#x5927;&#x4E8E;&#x53F3;&#x8FB9;&#x7684;&#x503C;&#xFF0C;&#x8FD4;&#x56DE; false&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; true</td>
+<td>(A &lt; B) &#x4E3A; true&#x3002;</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#xFF0C;&#x5982;&#x679C;&#x5DE6;&#x8FB9;&#x7684;&#x503C;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#x53F3;&#x8FB9;&#x7684;&#x503C;&#xFF0C;&#x8FD4;&#x56DE; true&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; false</td>
+<td>(A &gt;= B) is not true.</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#xFF0C; &#x5982;&#x679C;&#x5DE6;&#x8FB9;&#x7684;&#x503C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x53F3;&#x8FB9;&#x7684;&#x503C;&#xFF0C;&#x8FD4;&#x56DE; true&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; false</td>
+<td>(A &lt;= B) is true.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x4E09;&#x3001;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x4E09;&#x3001;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4E0B;&#x8868;&#x5217;&#x51FA;&#x4E86; Lua &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8BBE;&#x5B9A; A &#x7684;&#x503C;&#x4E3A; true&#xFF0C;B &#x7684;&#x503C;&#x4E3A; false&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x64CD;&#x4F5C;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x5B9E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>and</code></td>
+<td>&#x903B;&#x8F91;&#x4E0E;&#x64CD;&#x4F5C;&#x7B26;&#x3002; &#x5982;&#x679C;&#x4E24;&#x8FB9;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x4E3A; true &#x5219;&#x6761;&#x4EF6;&#x4E3A; true&#x3002;</td>
+<td>(A and B) &#x4E3A; false&#x3002;</td>
+</tr>
+<tr>
+<td><code>or</code></td>
+<td>&#x903B;&#x8F91;&#x6216;&#x64CD;&#x4F5C;&#x7B26;&#x3002; &#x5982;&#x679C;&#x4E24;&#x8FB9;&#x7684;&#x64CD;&#x4F5C;&#x4EFB;&#x4E00;&#x4E00;&#x4E2A;&#x4E3A; true &#x5219;&#x6761;&#x4EF6;&#x4E3A; true&#x3002;</td>
+<td>(A or B) &#x4E3A; true&#x3002;</td>
+</tr>
+<tr>
+<td><code>not</code></td>
+<td>&#x903B;&#x8F91;&#x975E;&#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x4E0E;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x76F8;&#x53CD;&#xFF0C;&#x5982;&#x679C;&#x6761;&#x4EF6;&#x4E3A; true&#xFF0C;&#x903B;&#x8F91;&#x975E;&#x4E3A; false&#x3002;</td>
+<td>not(A and B) &#x4E3A; true&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x56DB;&#x3001;&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x56DB;&#x3001;&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4E0B;&#x8868;&#x5217;&#x51FA;&#x4E86; Lua &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x8FDE;&#x63A5;&#x8FD0;&#x7B97;&#x7B26;&#x4E0E;&#x8BA1;&#x7B97;&#x8868;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x64CD;&#x4F5C;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x5B9E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>..</code></td>
+<td>&#x8FDE;&#x63A5;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</td>
+<td><code>a..b</code> &#xFF0C;&#x5176;&#x4E2D; a &#x4E3A; &quot;Hello &quot;&#xFF0C;b &#x4E3A; &quot;World&quot;, &#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A; &quot;Hello World&quot;&#x3002;</td>
+</tr>
+<tr>
+<td><code>#</code></td>
+<td>&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</td>
+<td><code>#&quot;Hello&quot;</code> &#x8FD4;&#x56DE; 5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x4E94;&#x3001;&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;"><a name="&#x4E94;&#x3001;&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E94;&#x3001;&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;</h3>
+<p>&#x4ECE;&#x9AD8;&#x5230;&#x4F4E;&#x7684;&#x987A;&#x5E8F;&#xFF1A;</p>
+<pre class="language-"><code>^
+not    - (unary)
+*      /
++      -
+..
+&lt;      &gt;      &lt;=     &gt;=     ~=     ==
+and
+or
+</code></pre><p>&#x9664;&#x4E86; <code>^</code> &#x548C; <code>..</code> &#x5916;&#x6240;&#x6709;&#x7684;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x90FD;&#x662F;&#x5DE6;&#x8FDE;&#x63A5;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-lua">a<span class="token operator">+</span>i <span class="token operator">&lt;</span> b<span class="token operator">/</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span>          <span class="token comment">--&gt;       (a+i) &lt; ((b/2)+1)</span>
+<span class="token number">5</span><span class="token operator">+</span>x<span class="token operator">^</span><span class="token number">2</span><span class="token operator">*</span><span class="token number">8</span>              <span class="token comment">--&gt;       5+((x^2)*8)</span>
+a <span class="token operator">&lt;</span> y <span class="token keyword">and</span> y <span class="token operator">&lt;=</span> z     <span class="token comment">--&gt;       (a &lt; y) and (y &lt;= z)</span>
+<span class="token operator">-</span>x<span class="token operator">^</span><span class="token number">2</span>                 <span class="token comment">--&gt;       -(x^2)</span>
+x<span class="token operator">^</span>y<span class="token operator">^</span>z                <span class="token comment">--&gt;       x^(y^z)</span>
+</code></pre>
+<p>&#x793A;&#x4F8B;</p>
+<pre class="language-"><code class="lang-lua">a <span class="token operator">=</span> <span class="token number">20</span>
+b <span class="token operator">=</span> <span class="token number">10</span>
+c <span class="token operator">=</span> <span class="token number">15</span>
+d <span class="token operator">=</span> <span class="token number">5</span>
+
+e <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span> <span class="token operator">*</span> c <span class="token operator">/</span> d<span class="token punctuation">;</span>        <span class="token comment">-- (30 * 15) / 5</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;(a + b) * c / d &#x8FD0;&#x7B97;&#x503C;&#x4E3A;  :&quot;</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
+
+e <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span> <span class="token operator">*</span> c<span class="token punctuation">)</span> <span class="token operator">/</span> d<span class="token punctuation">;</span>      <span class="token comment">-- (30 * 15) / 5</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;((a + b) * c) / d &#x8FD0;&#x7B97;&#x503C;&#x4E3A; :&quot;</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
+
+e <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>c <span class="token operator">/</span> d<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">-- (30) * (15/5)</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;(a + b) * (c / d) &#x8FD0;&#x7B97;&#x503C;&#x4E3A; :&quot;</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
+
+e <span class="token operator">=</span> a <span class="token operator">+</span> <span class="token punctuation">(</span>b <span class="token operator">*</span> c<span class="token punctuation">)</span> <span class="token operator">/</span> d<span class="token punctuation">;</span>        <span class="token comment">-- 20 + (150/5)</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;a + (b * c) / d &#x8FD0;&#x7B97;&#x503C;&#x4E3A;   :&quot;</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-04-16 16:48:41
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lua循环.html" class="navigation navigation-prev " aria-label="Previous page: Lua 循环">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Lua流程控制.html" class="navigation navigation-next " aria-label="Next page: Lua 流程控制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lua 运算符","level":"7","depth":0,"next":{"title":"Lua 流程控制","level":"8","depth":0,"path":"base/Lua流程控制.md","ref":"base/Lua流程控制.md","articles":[]},"previous":{"title":"Lua 循环","level":"6","depth":0,"path":"base/Lua循环.md","ref":"base/Lua循环.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-livereload","search-pro","splitter","prism","highlight","theme-comscore","anchor-navigation-ex-toc","expandable-chapters-small","tbfed-pagefooter","image-captions","livereload"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"splitter":{},"search-pro":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"刘仁奎","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"Lua 基础手册","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"Lua 基础手册"},"file":{"path":"base/Lua运算符.md","mtime":"2019-04-16T08:48:41.554Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-28T03:10:02.386Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

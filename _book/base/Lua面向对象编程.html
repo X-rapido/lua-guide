@@ -1,0 +1,791 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lua 面向对象编程 · Lua 基础手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="刘仁奎">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../assets/styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lua变量.html" />
+    
+    
+    <link rel="prev" href="Lua基本语法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    开篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="Lua介绍.html">
+            
+                <a href="Lua介绍.html">
+            
+                    
+                        <b>1.</b>
+                    
+                    Lua 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Lua安装.html">
+            
+                <a href="Lua安装.html">
+            
+                    
+                        <b>2.</b>
+                    
+                    Lua 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Lua基本语法.html">
+            
+                <a href="Lua基本语法.html">
+            
+                    
+                        <b>3.</b>
+                    
+                    Lua 基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Lua数据类型.html">
+            
+                <a href="Lua数据类型.html">
+            
+                    
+                        <b>4.</b>
+                    
+                    Lua 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Lua变量.html">
+            
+                <a href="Lua变量.html">
+            
+                    
+                        <b>5.</b>
+                    
+                    Lua 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="Lua循环.html">
+            
+                <a href="Lua循环.html">
+            
+                    
+                        <b>6.</b>
+                    
+                    Lua 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="Lua运算符.html">
+            
+                <a href="Lua运算符.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    Lua 运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="Lua流程控制.html">
+            
+                <a href="Lua流程控制.html">
+            
+                    
+                        <b>8.</b>
+                    
+                    Lua 流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="Lua函数.html">
+            
+                <a href="Lua函数.html">
+            
+                    
+                        <b>9.</b>
+                    
+                    Lua 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="Lua字符串.html">
+            
+                <a href="Lua字符串.html">
+            
+                    
+                        <b>10.</b>
+                    
+                    Lua 字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="Lua数组.html">
+            
+                <a href="Lua数组.html">
+            
+                    
+                        <b>11.</b>
+                    
+                    Lua 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="Lua迭代器.html">
+            
+                <a href="Lua迭代器.html">
+            
+                    
+                        <b>12.</b>
+                    
+                    Lua 迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="Lua表table.html">
+            
+                <a href="Lua表table.html">
+            
+                    
+                        <b>13.</b>
+                    
+                    Lua table 表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="Lua模块与包.html">
+            
+                <a href="Lua模块与包.html">
+            
+                    
+                        <b>14.</b>
+                    
+                    Lua 模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="Lua元表.html">
+            
+                <a href="Lua元表.html">
+            
+                    
+                        <b>15.</b>
+                    
+                    Lua 元表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="Lua协同程序.html">
+            
+                <a href="Lua协同程序.html">
+            
+                    
+                        <b>16.</b>
+                    
+                    Lua 协同程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="Lua文件操作.html">
+            
+                <a href="Lua文件操作.html">
+            
+                    
+                        <b>17.</b>
+                    
+                    Lua 文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="Lua错误处理.html">
+            
+                <a href="Lua错误处理.html">
+            
+                    
+                        <b>1.</b>
+                    
+                    Lua 错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Lua调试.html">
+            
+                <a href="Lua调试.html">
+            
+                    
+                        <b>2.</b>
+                    
+                    Lua 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Lua垃圾收集.html">
+            
+                <a href="Lua垃圾收集.html">
+            
+                    
+                        <b>3.</b>
+                    
+                    Lua 垃圾收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="Lua面向对象编程.html">
+            
+                <a href="Lua面向对象编程.html">
+            
+                    
+                        <b>4.</b>
+                    
+                    Lua 面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="LuaMySQL操作.html">
+            
+                <a href="LuaMySQL操作.html">
+            
+                    
+                        <b>5.</b>
+                    
+                    Lua MySQL操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lua 面向对象编程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lua-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;"><a name="lua-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#lua-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>Lua &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;</h2>
+<p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF08;Object Oriented Programming&#xFF0C;OOP&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x975E;&#x5E38;&#x6D41;&#x884C;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7F16;&#x7A0B;&#x67B6;&#x6784;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x90FD;&#x652F;&#x6301;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF1A;</p>
+<ul>
+<li>C++</li>
+<li>Java</li>
+<li>Objective-C</li>
+<li>Smalltalk</li>
+<li>C#</li>
+<li>Ruby</li>
+</ul>
+<h3 id="&#x4E00;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7279;&#x70B9;"><a name="&#x4E00;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7279;&#x70B9;</h3>
+<ul>
+<li>&#x7C7B;&#xFF1A;&#x7C7B;&#x662F;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x53EF;&#x6269;&#x5C55;&#x6A21;&#x677F;&#xFF0C;&#x4E3A;&#x72B6;&#x6001;(&#x6210;&#x5458;&#x53D8;&#x91CF;)&#x548C;&#x884C;&#x4E3A;&#x5B9E;&#x73B0;&#x63D0;&#x4F9B;&#x521D;&#x59CB;&#x503C;&#x3002;</li>
+<li>&#x5BF9;&#x8C61;&#xFF1A;&#x5B83;&#x662F;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x4E3A;&#x81EA;&#x5DF1;&#x5206;&#x914D;&#x4E86;&#x5355;&#x72EC;&#x7684;&#x5185;&#x5B58;&#x3002;</li>
+<li>&#x7EE7;&#x627F;&#xFF1A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x6982;&#x5FF5;&#xFF0C;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x7531;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x7EE7;&#x627F;&#x3002;</li>
+<li>&#x5C01;&#x88C5;&#xFF1A;&#x8FD9;&#x662F;&#x5728;&#x7C7B;&#x4E2D;&#x7EC4;&#x5408;&#x6570;&#x636E;&#x548C;&#x51FD;&#x6570;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x501F;&#x52A9;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x3002; &#x5B83;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x6570;&#x636E;&#x62BD;&#x8C61;&#x3002;</li>
+</ul>
+<h3 id="&#x4E8C;&#x3001;lua-&#x9762;&#x5411;&#x5BF9;&#x8C61;"><a name="&#x4E8C;&#x3001;lua-&#x9762;&#x5411;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;lua-&#x9762;&#x5411;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;Lua &#x9762;&#x5411;&#x5BF9;&#x8C61;</h3>
+<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x5BF9;&#x8C61;&#x7531;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7EC4;&#x6210;&#x3002;Lua &#x4E2D;&#x6700;&#x57FA;&#x672C;&#x7684;&#x7ED3;&#x6784;&#x662F; <code>table</code>&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x7528; <code>table</code> &#x6765;&#x63CF;&#x8FF0;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<p>Lua &#x4E2D; <code>function</code> &#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x3002;&#x90A3;&#x4E48;&#x7C7B;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>table + function</code> &#x6A21;&#x62DF;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x81F3;&#x4E8E;&#x7EE7;&#x627F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>metetable</code> &#x6A21;&#x62DF;&#x51FA;&#x6765;&#xFF08;&#x4E0D;&#x63A8;&#x8350;&#x7528;&#xFF0C;&#x53EA;&#x6A21;&#x62DF;&#x6700;&#x57FA;&#x672C;&#x7684;&#x5BF9;&#x8C61;&#x5927;&#x90E8;&#x5206;&#x65F6;&#x95F4;&#x591F;&#x7528;&#x4E86;&#xFF09;&#x3002;</p>
+<p>Lua &#x4E2D;&#x7684;&#x8868;&#x4E0D;&#x4EC5;&#x5728;&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#x662F;&#x4E00;&#x79CD;&#x5BF9;&#x8C61;&#x3002;&#x50CF;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#xFF0C;&#x8868;&#x4E5F;&#x6709;&#x72B6;&#x6001;&#xFF08;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF09;&#xFF0C;&#x4E5F;&#x6709;&#x4E0E;&#x5BF9;&#x8C61;&#x7684;&#x503C;&#x72EC;&#x7ACB;&#x7684;&#x672C;&#x6027;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x62E5;&#x6709;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x503C;&#x7684;&#x5BF9;&#x8C61;&#xFF08;table&#xFF09;&#x4EE3;&#x8868;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#xFF1B;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x53EF;&#x4EE5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x4F46;&#x4ED6;&#x59CB;&#x7EC8;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1B;</p>
+<h3 id="&#x4E09;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x793A;&#x4F8B;"><a name="&#x4E09;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x793A;&#x4F8B;</h3>
+<p>&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6570;&#x5B66;&#x4F8B;&#x5B50;&#x3002;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x9047;&#x5230;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x5F62;&#x72B6;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x5706;&#x5F62;&#xFF0C;&#x77E9;&#x5F62;&#x548C;&#x65B9;&#x5F62;&#x3002;</p>
+<p>&#x5F62;&#x72B6;&#x53EF;&#x4EE5;&#x5177;&#x6709;&#x5171;&#x540C;&#x7684;&#x5C5E;&#x6027; <code>area</code>&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4F7F;&#x7528;&#x516C;&#x5171;&#x5C5E;&#x6027;&#x533A;&#x57DF;&#x4ECE;&#x57FA;&#x7840;&#x5BF9;&#x8C61;&#x5F62;&#x72B6;&#x6269;&#x5C55;&#x5176;&#x4ED6;&#x5F62;&#x72B6;&#x3002;&#x6BCF;&#x4E2A;&#x5F62;&#x72B6;&#x90FD;&#x53EF;&#x4EE5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x50CF;&#x77E9;&#x5F62;&#x8FD9;&#x6837;&#x7684;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5177;&#x6709;&#x5C5E;&#x6027; <code>length</code>&#xFF0C;<code>width</code>&#xFF0C;<code>area</code> &#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#xFF0C;<code>printArea</code> &#x548C; <code>calculateArea</code> &#x4F5C;&#x4E3A;&#x5B83;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<h4 id="1&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7C7B;"><a name="1&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7C7B;</h4>
+<p>&#x4E0B;&#x9762;&#x663E;&#x793A;&#x4E86;&#x5177;&#x6709;&#x4E09;&#x4E2A;&#x5C5E;&#x6027; <code>length</code>&#xFF0C;<code>width</code> &#x548C; <code>area</code> &#x7684;&#x77E9;&#x5F62;&#x7684;&#x7B80;&#x5355;&#x7C7B;&#x5B9E;&#x73B0;&#x3002;&#x5B83;&#x8FD8;&#x6709;&#x4E00;&#x4E2A; <code>printArea</code> &#x51FD;&#x6570;&#x6765;&#x6253;&#x5370;&#x8BA1;&#x7B97;&#x533A;&#x57DF;&#x9762;&#x79EF;&#x3002;</p>
+<pre class="language-"><code class="lang-lua"><span class="token comment">-- Meta class</span>
+Rectangle <span class="token operator">=</span> <span class="token punctuation">{</span>area <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> breadth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">}</span>
+
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x65B9;&#x6CD5; new</span>
+<span class="token keyword">function</span> Rectangle<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> length<span class="token punctuation">,</span> breadth<span class="token punctuation">)</span>
+  o <span class="token operator">=</span> o <span class="token keyword">or</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token function">setmetatable</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> self<span class="token punctuation">)</span>
+  self<span class="token punctuation">.</span>__index <span class="token operator">=</span> self
+  self<span class="token punctuation">.</span>length <span class="token operator">=</span> length <span class="token keyword">or</span> <span class="token number">0</span>
+  self<span class="token punctuation">.</span>breadth <span class="token operator">=</span> breadth <span class="token keyword">or</span> <span class="token number">0</span>
+  self<span class="token punctuation">.</span>area <span class="token operator">=</span> length <span class="token operator">*</span> breadth<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> o
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x65B9;&#x6CD5; printArea</span>
+<span class="token keyword">function</span> Rectangle<span class="token punctuation">:</span><span class="token function">printArea</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x77E9;&#x5F62;&#x9762;&#x79EF;&#x4E3A; &quot;</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>area<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+</code></pre>
+<h4 id="2&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;"><a name="2&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</h4>
+<p>&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x662F;&#x4E3A;&#x7C7B;&#x5B9E;&#x4F8B;&#x5206;&#x914D;&#x5185;&#x5B58;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5B58;&#x5E76;&#x5171;&#x4EAB;&#x516C;&#x5171;&#x7C7B;&#x6570;&#x636E;&#x3002;</p>
+<pre class="language-"><code class="lang-lua">r <span class="token operator">=</span> Rectangle<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="3&#x3001;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;"><a name="3&#x3001;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</h4>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x70B9;(<code>.</code>)&#x8FD0;&#x7B97;&#x7B26;&#x8BBF;&#x95EE;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<pre class="language-"><code class="lang-lua"><span class="token function">print</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="4&#x3001;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x51FD;&#x6570;"><a name="4&#x3001;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x51FD;&#x6570;</h4>
+<p>&#x4F7F;&#x7528;&#x5E26;&#x6709;&#x5BF9;&#x8C61;&#x7684;&#x5192;&#x53F7;(<code>:</code>)&#x8FD0;&#x7B97;&#x7B26;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-lua">r <span class="token operator">=</span> Rectangle<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span>
+r<span class="token punctuation">:</span><span class="token function">printArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5206;&#x914D;&#x5185;&#x5B58;&#x5E76;&#x8BBE;&#x7F6E;&#x521D;&#x59CB;&#x503C;&#x3002;</p>
+<h4 id="5&#x3001;&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;"><a name="5&#x3001;&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#5&#x3001;&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;</h4>
+<p>&#x4EE5;&#x4E0B;&#x6211;&#x4EEC;&#x6F14;&#x793A;&#x4E86; Lua &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-lua"><span class="token comment">-- Meta class</span>
+Rectangle <span class="token operator">=</span> <span class="token punctuation">{</span>area <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> breadth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">}</span>
+
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x65B9;&#x6CD5; new</span>
+<span class="token keyword">function</span> Rectangle<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> length<span class="token punctuation">,</span> breadth<span class="token punctuation">)</span>
+  o <span class="token operator">=</span> o <span class="token keyword">or</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token function">setmetatable</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> self<span class="token punctuation">)</span>
+  self<span class="token punctuation">.</span>__index <span class="token operator">=</span> self
+  self<span class="token punctuation">.</span>length <span class="token operator">=</span> length <span class="token keyword">or</span> <span class="token number">0</span>
+  self<span class="token punctuation">.</span>breadth <span class="token operator">=</span> breadth <span class="token keyword">or</span> <span class="token number">0</span>
+  self<span class="token punctuation">.</span>area <span class="token operator">=</span> length <span class="token operator">*</span> breadth<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> o
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x65B9;&#x6CD5; printArea</span>
+<span class="token keyword">function</span> Rectangle<span class="token punctuation">:</span><span class="token function">printArea</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x77E9;&#x5F62;&#x9762;&#x79EF;&#x4E3A; &quot;</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>area<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+myshape <span class="token operator">=</span> Rectangle<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span>
+
+<span class="token comment">-- &#x6267;&#x884C;&#x6210;&#x5458;&#x51FD;&#x6570;</span>
+myshape<span class="token punctuation">:</span><span class="token function">printArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6267;&#x884C;&#x4EE5;&#x4E0A;&#x7A0B;&#x5E8F;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code>&#x9762;&#x79EF;&#x4E3A;     200
+</code></pre><h3 id="&#x56DB;&#x3001;lua-&#x7EE7;&#x627F;"><a name="&#x56DB;&#x3001;lua-&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;lua-&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;Lua &#x7EE7;&#x627F;</h3>
+<p>&#x7EE7;&#x627F;&#x662F;&#x6307;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x53EF;&#x7528;&#x4E8E;&#x6269;&#x5C55;&#x57FA;&#x7840;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x6F14;&#x793A;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7EE7;&#x627F;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-lua"><span class="token comment">-- Meta class</span>
+Shape <span class="token operator">=</span> <span class="token punctuation">{</span>area <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">}</span>
+
+<span class="token comment">-- &#x57FA;&#x7840;&#x7C7B;&#x65B9;&#x6CD5; new</span>
+<span class="token keyword">function</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> side<span class="token punctuation">)</span>
+  o <span class="token operator">=</span> o <span class="token keyword">or</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token function">setmetatable</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> self<span class="token punctuation">)</span>
+  self<span class="token punctuation">.</span>__index <span class="token operator">=</span> self
+  side <span class="token operator">=</span> side <span class="token keyword">or</span> <span class="token number">0</span>
+  self<span class="token punctuation">.</span>area <span class="token operator">=</span> side <span class="token operator">*</span> side<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> o
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x57FA;&#x7840;&#x7C7B;&#x65B9;&#x6CD5; printArea</span>
+<span class="token keyword">function</span> Shape<span class="token punctuation">:</span><span class="token function">printArea</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x9762;&#x79EF;&#x4E3A; &quot;</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>area<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;<code>Square</code> &#x5BF9;&#x8C61;&#x7EE7;&#x627F;&#x4E86; <code>Shape</code> &#x7C7B;:</p>
+<pre class="language-"><code class="lang-lua">Square <span class="token operator">=</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">-- &#x6D3E;&#x751F;&#x65B0;&#x7C7B;</span>
+<span class="token keyword">function</span> Square<span class="token punctuation">:</span><span class="token function">new</span> <span class="token punctuation">(</span>o<span class="token punctuation">,</span> side<span class="token punctuation">)</span>
+  o <span class="token operator">=</span> o <span class="token keyword">or</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span>side<span class="token punctuation">)</span>
+  <span class="token function">setmetatable</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> self<span class="token punctuation">)</span>
+  self<span class="token punctuation">.</span>__index <span class="token operator">=</span> self
+  <span class="token keyword">return</span> o
+<span class="token keyword">end</span>
+</code></pre>
+<h4 id="&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;"><a name="&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;</h4>
+<p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x6211;&#x4EEC;&#x7EE7;&#x627F;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7C7B;&#xFF0C;&#x6765;&#x6269;&#x5C55;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x4FDD;&#x7559;&#x4E86;&#x7EE7;&#x627F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre class="language-"><code class="lang-lua"><span class="token comment">-- Meta class</span>
+Shape <span class="token operator">=</span> <span class="token punctuation">{</span>area <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">}</span>
+<span class="token comment">-- &#x57FA;&#x7840;&#x7C7B;&#x65B9;&#x6CD5; new</span>
+<span class="token keyword">function</span> Shape<span class="token punctuation">:</span><span class="token function">new</span> <span class="token punctuation">(</span>o<span class="token punctuation">,</span>side<span class="token punctuation">)</span>
+  o <span class="token operator">=</span> o <span class="token keyword">or</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token function">setmetatable</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> self<span class="token punctuation">)</span>
+  self<span class="token punctuation">.</span>__index <span class="token operator">=</span> self
+  side <span class="token operator">=</span> side <span class="token keyword">or</span> <span class="token number">0</span>
+  self<span class="token punctuation">.</span>area <span class="token operator">=</span> side<span class="token operator">*</span>side<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> o
+<span class="token keyword">end</span>
+<span class="token comment">-- &#x57FA;&#x7840;&#x7C7B;&#x65B9;&#x6CD5; printArea</span>
+<span class="token keyword">function</span> Shape<span class="token punctuation">:</span><span class="token function">printArea</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x9762;&#x79EF;&#x4E3A; &quot;</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>area<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+myshape <span class="token operator">=</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+myshape<span class="token punctuation">:</span><span class="token function">printArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+Square <span class="token operator">=</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x65B9;&#x6CD5; new</span>
+<span class="token keyword">function</span> Square<span class="token punctuation">:</span><span class="token function">new</span> <span class="token punctuation">(</span>o<span class="token punctuation">,</span>side<span class="token punctuation">)</span>
+  o <span class="token operator">=</span> o <span class="token keyword">or</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span>side<span class="token punctuation">)</span>
+  <span class="token function">setmetatable</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> self<span class="token punctuation">)</span>
+  self<span class="token punctuation">.</span>__index <span class="token operator">=</span> self
+  <span class="token keyword">return</span> o
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x65B9;&#x6CD5; printArea</span>
+<span class="token keyword">function</span> Square<span class="token punctuation">:</span><span class="token function">printArea</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6B63;&#x65B9;&#x5F62;&#x9762;&#x79EF;&#x4E3A; &quot;</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>area<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+mysquare <span class="token operator">=</span> Square<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+mysquare<span class="token punctuation">:</span><span class="token function">printArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+Rectangle <span class="token operator">=</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x65B9;&#x6CD5; new</span>
+<span class="token keyword">function</span> Rectangle<span class="token punctuation">:</span><span class="token function">new</span> <span class="token punctuation">(</span>o<span class="token punctuation">,</span>length<span class="token punctuation">,</span>breadth<span class="token punctuation">)</span>
+  o <span class="token operator">=</span> o <span class="token keyword">or</span> Shape<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span>
+  <span class="token function">setmetatable</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> self<span class="token punctuation">)</span>
+  self<span class="token punctuation">.</span>__index <span class="token operator">=</span> self
+  self<span class="token punctuation">.</span>area <span class="token operator">=</span> length <span class="token operator">*</span> breadth
+  <span class="token keyword">return</span> o
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x65B9;&#x6CD5; printArea</span>
+<span class="token keyword">function</span> Rectangle<span class="token punctuation">:</span><span class="token function">printArea</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x77E9;&#x5F62;&#x9762;&#x79EF;&#x4E3A; &quot;</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>area<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+myrectangle <span class="token operator">=</span> Rectangle<span class="token punctuation">:</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token keyword">nil</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span>
+myrectangle<span class="token punctuation">:</span><span class="token function">printArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6267;&#x884C;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code>&#x9762;&#x79EF;&#x4E3A;    100
+&#x6B63;&#x65B9;&#x5F62;&#x9762;&#x79EF;&#x4E3A;     100
+&#x77E9;&#x5F62;&#x9762;&#x79EF;&#x4E3A;  200
+</code></pre><p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x4E24;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#xFF1A;<code>Square</code> &#x548C; <code>Rectangle</code>&#x3002;&#x5E76;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x8986;&#x76D6;&#x57FA;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#x3002;&#x5728;&#x6B64;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x4F1A;&#x8986;&#x76D6;&#x51FD;&#x6570; <code>printArea</code>&#x3002;</p>
+<h4 id="&#x51FD;&#x6570;&#x91CD;&#x5199;"><a name="&#x51FD;&#x6570;&#x91CD;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x91CD;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x91CD;&#x5199;</h4>
+<p>Lua &#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x91CD;&#x5199;&#x57FA;&#x7840;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-lua"><span class="token comment">-- &#x6D3E;&#x751F;&#x7C7B;&#x65B9;&#x6CD5; printArea</span>
+<span class="token keyword">function</span> Square<span class="token punctuation">:</span><span class="token function">printArea</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6B63;&#x65B9;&#x5F62;&#x9762;&#x79EF; &quot;</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>area<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-04-22 19:03:50
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lua基本语法.html" class="navigation navigation-prev " aria-label="Previous page: Lua 基本语法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Lua变量.html" class="navigation navigation-next " aria-label="Next page: Lua 变量">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lua 面向对象编程","level":"4","depth":0,"next":{"title":"Lua 变量","level":"5","depth":0,"path":"base/Lua变量.md","ref":"base/Lua变量.md","articles":[]},"previous":{"title":"Lua 基本语法","level":"3","depth":0,"path":"base/Lua基本语法.md","ref":"base/Lua基本语法.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-livereload","search-pro","splitter","prism","highlight","theme-comscore","anchor-navigation-ex-toc","expandable-chapters-small","tbfed-pagefooter","image-captions","livereload"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"splitter":{},"search-pro":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"刘仁奎","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"Lua 基础手册","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"Lua 基础手册"},"file":{"path":"base/Lua面向对象编程.md","mtime":"2019-04-22T11:03:50.356Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-28T03:10:02.386Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,60 @@
+{
+    "title": "Lua 基础手册",
+    "description": "Lua 基础手册",
+    "author": "刘仁奎",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "structure": {
+        "readme": "README.md"
+    },
+    "styles":{
+        "website": "assets/styles/website.css"
+    },
+    "plugins": [
+        "-lunr", "-search", "-sharing","-livereload",
+        "search-pro",
+        "splitter",
+        "prism",
+        "highlight",
+        "theme-comscore",
+        "anchor-navigation-ex-toc",
+        "expandable-chapters-small",
+        "tbfed-pagefooter",
+        "image-captions"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "tbfed-pagefooter": {
+            "copyright": "",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "anchor-navigation-ex-toc": {
+            "showLevel": false,
+            "associatedWithSummary": true,
+            "printLog": false,
+            "multipleH1": false,
+            "mode": "float",
+            "float": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        },
+        "expandable-chapters":{},
+        "image-captions": {
+            "caption": "_CAPTION_"
+        }
+    }
+}
